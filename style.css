@@ -1,0 +1,53 @@
+body {
+    background-color: #ffe1a8;
+}
+
+header {
+    text-align: center;
+}
+
+.calculator {
+    margin: 0 auto;
+    height: 90vh;
+    max-width: 95vw;
+    display: grid;
+    grid-template-rows: repeat(5, 20%);
+    grid-template-columns: repeat(4, 25%);
+    grid-gap: 5px;
+    grid-template-areas: "display display display modulus" "seven eight nine division" "four five six multiplication" "one two three addition" "zero decimal equal subtraction";
+    text-align: center;
+}
+
+button {
+    font-size: 36px;
+    border-radius: 10px;
+    border-color: none;
+    background-color: #333138;
+    color: antiquewhite;
+}
+
+    button:active, button:hover {
+        background-color: #cecccc;
+        color: #333138;
+    }
+
+.display {
+    margin: 0;
+    background-image: url(screen.png);
+    background-size: cover;
+    grid-area: display;
+    color: #333138;
+    font-size: 130px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-end;
+    padding-right: 10px;
+}
+
+.modulus {
+    grid-area: modulus;
+}
+
+.equals {
+    background-color: #c44536;
+}
