@@ -8,25 +8,19 @@
 </head>
 <body>
     <?php include 'script.php';?>
-    <section class="calculator">
-        <h3 class="display">test input</h3>
-        <button class="modulus">%</button>
-        <button class="seven">7</button>
-        <button class="eight">8</button>
-        <button class="nine">9</button>
-        <button class="division">/</button>
-        <button class="four">4</button>
-        <button class="five">5</button>
-        <button class="six">6</button>
-        <button class="mutiplication">*</button>
-        <button class="one">1</button>
-        <button class="two">2</button>
-        <button class="three">3</button>
-        <button class="addition">+</button>
-        <button class="zero">0</button>
-        <button class="decimal">.</button>
-        <button class="equals">=</button>
-        <button class="subtraction">-</button>
-    </section>
+
+    <form class="calculator" method="POST" action"script.php>
+        <h3 class="display"><?php echo $result; ?></h3>
+        <input type="text" name="integerOne" class="input">
+        <select name="operand" class="input">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
+            <option value="%">%</option>
+        </select>
+        <input type="text" name="integerTwo" class="input">
+        <button class="equals" type="submit" name="submit" value="calculator">=</button>
+    </form>
 </body>
 </html>
