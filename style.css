@@ -1,5 +1,7 @@
 body {
     background-color: #ffe1a8;
+    max-width: 100vw;
+    max-height: 100vh;
 }
 
 header {
@@ -26,35 +28,20 @@ button {
     color: antiquewhite;
 }
 
-    button:active, button:hover {
-        background-color: #cecccc;
-        color: #333138;
-    }
-
-.display {
-    margin: 0;
-    background-image: url(screen.png);
-    background-size: cover;
-    grid-area: display;
-    color: #333138;
-    font-size: 130px;
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: flex-end;
-    padding-right: 10px;
+h3 {
+    font-size: 4rem;
+    position: relative;
+    top: -50vh;
+    left: 50vw;
+    width: fit-content
 }
 
 .input {
-    font-size: 10rem;
-    padding: 20px;
+    font-size: 3rem;
 }
 
 .equals {
     background-color: #c44536;
 }
 
-.instructions {
-    text-align: right;
-    font-size: 4rem;
-    grid-area: instructions;
-}
+
